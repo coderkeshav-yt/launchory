@@ -1,0 +1,155 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 33% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 33% 5%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 33% 5%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 14% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 14% 15%;
+    --muted-foreground: 210 40% 70%;
+
+    --accent: 250 95% 76%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 15%;
+    --input: 220 14% 15%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 33% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 250 95% 76%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 14% 15%;
+    --sidebar-ring: 250 95% 76%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins antialiased;
+    background-image: 
+      radial-gradient(circle at 25% 10%, rgba(30, 144, 255, 0.1) 0%, transparent 30%),
+      radial-gradient(circle at 75% 75%, rgba(147, 112, 219, 0.1) 0%, transparent 30%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-accent;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-purple;
+  }
+  
+  .glass {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 shadow-glass;
+  }
+  
+  .glass-card {
+    @apply glass rounded-2xl p-6 transition-all duration-300 hover:shadow-neon-glow;
+  }
+  
+  .glass-button {
+    @apply glass px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-neon-glow;
+  }
+
+  .neon-border {
+    @apply relative before:absolute before:inset-0 before:p-[1px] before:rounded-[inherit] before:bg-gradient-to-r before:from-neon-blue before:to-neon-purple before:opacity-70 before:-z-10;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-space {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .animate-spin-slow {
+    animation: spin 10s linear infinite;
+  }
+  
+  .animate-spin-reverse-slow {
+    animation: spin-reverse 15s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(0.95);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+  }
+}
+
