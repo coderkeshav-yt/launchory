@@ -1,22 +1,26 @@
-# Welcome to your Lovable project
+# Welcome to Launchory!
+
+## What is Launchory?
+🚀 Launchory – Custom Web Development Agency
+We build fast, powerful, and beautifully crafted websites with custom code, custom style, and zero templates. From concept to launch, Launchory delivers pixel-perfect precision, lightning-fast performance, and tailored solutions that grow your brand. 
+
+## How to use Launchory?
+To use Launchory, you need to have a browser with JavaScript enabled. You can use the following steps to create your own launchpad:
+1. Go to the Launchory website.
+2. Click on the "Request for Project" . 
+3. Get ur project name.
+4. Select the design with help of our Expert Team.
+5. Get ur Website Live within Few Days.
+6. Enjoy your Launchory !
 
 ## Project info
 
-**URL**: https://launchory.vercel.app /URL_ADDRESS
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/71167823-b0dc-4321-9d5a-3b23a469a33a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
+**URL**: https://launchory.vercel.app 
+**Tech stack**: Vite, TypeScript, React, shadcn-ui, Tailwind CSS
+**Author**: [@Keshav Singh] (Mail at : -  keshavtech01@gmail.com)
+**Tech stack**: Vite, TypeScript, React, shadcn-ui, Tailwind CSS
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -59,15 +63,3 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/71167823-b0dc-4321-9d5a-3b23a469a33a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
