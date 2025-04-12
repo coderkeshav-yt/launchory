@@ -185,7 +185,7 @@ const BudgetCalculator = ({ isOpen, onClose }: BudgetCalculatorProps) => {
             >
               <option value="1-3">0.5-1 months</option>
               <option value="3-6">1-1.5 months</option>
-              <option value="6-12">1.5-2 months</option>
+              <option value="6-12">1.5-2.5 months</option>
             </select>
           </div>
           
