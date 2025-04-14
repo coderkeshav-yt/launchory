@@ -74,10 +74,10 @@ const BudgetCalculator = ({ isOpen, onClose }: BudgetCalculatorProps) => {
       // Base price based on project type
       let basePrice = 0;
       switch (formState.projectType) {
-        case 'website': basePrice = 2000; break; // Reduced from 5000
-        case 'webapp': basePrice = 6000; break;  // Reduced from 15000
-        case 'ecommerce': basePrice = 8000; break; // Reduced from 20000
-        case 'saas': basePrice = 10000; break;  // Reduced from 25000
+        case 'website': basePrice = 50 ; break; 
+        case 'webapp': basePrice = 100 ; break;  
+        case 'ecommerce': basePrice = 150 ; break;
+        case 'saas': basePrice = 200 ; break;
       }
       
       // Complexity multiplier
